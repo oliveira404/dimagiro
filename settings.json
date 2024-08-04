@@ -1,7 +1,9 @@
 {
   "workbench.colorTheme": "Origamid Next",
   "editor.mouseWheelZoom": true,
+  "editor.fontFamily": "'MesloLGS NF', 'monospace', monospace",
   "editor.wordWrap": "on",
+  "editor.lineHeight": 1.75,
   "workbench.iconTheme": "material-icon-theme",
   "editor.linkedEditing": true,
   "files.autoSave": "afterDelay",
