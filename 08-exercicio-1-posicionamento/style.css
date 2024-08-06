@@ -1,0 +1,151 @@
+:root {
+  --cinza: #f7f7f7;
+  --cinza-escuro: #c6c6c6;
+  --vermelho: #ee2211;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--cinza);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 100px;
+}
+
+.menu {
+  display: flex;
+  place-content: center;
+  gap: 30px;
+}
+
+.menu a {
+  background-color: white;
+  padding: 20px 40px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.conteudo {
+  display: grid;
+  grid-template-columns: repeat(2, 600px);
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 70px;
+  position: relative;
+}
+
+.bike {
+  max-width: 100%;
+}
+
+.bike-descricao {
+  background-color: white;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  /*place-self: center;*/
+
+  /* padding: 40px 20px; */
+  padding: 0 40px;
+}
+
+.bike-descricao h2 {
+  font-weight: bolder;
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.bike-descricao p {
+  text-align: right;
+  max-width: 500px;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.bike-descricao a {
+  background-color: var(--vermelho);
+  padding: 15px 30px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+.conteudo .vantagens {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+}
+
+.conteudo .vantagens h2 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: var(--cinza-escuro);
+  font-weight: bolder;
+  display: block;
+  text-align: right;
+  padding: 40px;
+}
+
+.conteudo .info-descricao {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 60px;
+}
+
+.conteudo .info-descricao .descricao {
+  margin-top: 30px;
+}
+
+.conteudo .info-descricao .descricao div {
+  display: flex;
+  gap: 20px;
+}
+
+.conteudo .info-descricao .descricao div h3 {
+  margin: 0;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+}
+
+.conteudo .info-descricao .descricao p {
+  margin-left: 44px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  max-width: 450px;
+}
+
+footer {
+  background-color: white;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+footer > p {
+  font-size: 2rem;
+  text-align: center;
+}
+
+/*
+font arial
+parafrago 20px
+vantagens bikecraft 64px
+
+# tamanhos
+conteudo principal maixmo 1000px
+*/
