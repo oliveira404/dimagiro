@@ -1,0 +1,39 @@
+.linear {
+  height: 200px;
+  background-image: linear-gradient(
+    /*to left*/ 60deg,
+    lightblue 0%,
+    lightcoral 10%,
+    yellow 20%,
+    red 30%
+  );
+}
+
+.radial {
+  height: 200px;
+  background-image: radial-gradient(circle, blue, red, green);
+}
+
+.bicicleta {
+  height: 600px;
+  background-color: red;
+  background-image: url("./bicicleta.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  /* background: red url("./bicicleta.jpg") no-repeat cover center top; */
+  display: flex;
+}
+
+h1 {
+  margin: auto;
+  background-color: white;
+}
+
+.pattern {
+  height: 300px;
+  background-color: lightcoral;
+  background-image: url("./star.png");
+  background-repeat: repeat;
+  background-size: 30px;
+}
