@@ -1,0 +1,23 @@
+a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  background-color: #caf; 
+  color: #217;
+}
+
+
+a:hover {
+  color: #147;
+  background: #adf;
+}
+
+ul {
+  list-style: georgian inside;
+}
+
+ul li:not(:nth-child(3), :last-child, .terceito) {
+  background-color: palevioletred;
+}
