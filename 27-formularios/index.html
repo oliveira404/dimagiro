@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,8 +20,46 @@
       border-radius: 5px;
       background: #ccc;
     }
+
+    .checkbox,
+    .radio {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .checkbox,
+    .radio label {
+      margin: 0px;
+      /* display: inline-block; */
+    }
+
+    .checkbox input,
+    .radio input {
+      margin: 0px;
+      width: 20px;
+      height: 20px;
+    }
+
+    select {
+      font-size: 1.2rem;
+      padding: 10px;
+    }
+
+    textarea {
+      font-size: 1.2rem;
+    }
+
+    button {
+      font-size: 2rem;
+      padding: 10px 20px;
+      background-color: purple;
+      border: none;
+    }
   </style>
 </head>
+
 <body>
   <form action="./">
     <label for="nome">Nome</label>
@@ -29,13 +68,41 @@
     <label for="senha">Senha</label>
     <input type="password" id="senha" name="senha" placeholder="Sua Senha" required>
 
-
     <label for="email">Email</label>
     <input type="email" id="email" name="email" placeholder="Seu Email" required>
 
     <label for="data">Data</label>
     <input type="date" id="data" name="data">
+
+    <div class="checkbox">
+      <input type="checkbox" id="termos" name="termos" value="aceito">
+      <label for="termos">Aceito os termos de condição da empresa.</label>
+    </div>
+
+    <p>Entrega</p>
+    <div class="radio">
+      <input type="radio" id="retirada" name="retirada">
+      <label for="retirada">Retirar no local.</label>
+    </div>
+
+    <div class="radio">
+      <input type="radio" id="entrega" name="retirada">
+      <label for="entrega">entregar em casa.</label>
+    </div>
+
+    <label for="parcelas"></label>
+    <select name="parcelas" id="parcelas">
+      <option value="">1x de R$200</option>
+      <option value="">2x de R$100</option>
+      <option value="">3x de R$100</option>
+    </select>
+
+    <label for="mensagem">Mensagem</label>
+    <textarea name="mensagem" id="mensagem" rows="5">
+    </textarea>
+
     <button>Enviar</button>
   </form>
 </body>
+
 </html>
