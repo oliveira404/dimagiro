@@ -1,0 +1,54 @@
+/*seletores de input*/
+[required] {
+  border: 2px solid greenyellow;
+}
+
+[href="#contato"] {
+  border: 2px solid red;
+}
+
+a[href="#home"] {
+  background-color: purple;
+  color: white;
+  padding: 20px;
+}
+
+/*selecionando só link interno*/
+/*adicionando efeito somente para elementos que COMEÇAR COM #*/
+[href^="#"] {
+  border-bottom: solid 5px cyan;
+}
+
+/*adicionando efeito somente para elementos que TERMINAR COM $*/
+[href$=".com"] {
+  border-top: solid 5px orange;
+}
+
+/*> pega só h2 filho de section*/
+section > h2 {
+  color: tomato;
+}
+
+p {
+  margin: 0;
+}
+
+article {
+  background: lightgreen;
+  padding: 10px;
+}
+
+/* p {
+  margin-bottom: 20px;
+} */
+/*uma das forma de retirar a margem do ultimo elemento.*/
+/* article p:last-child {
+  margin-bottom: 0;
+} */
+
+/*ele só vai selecionar um p que vem após um outro p*/
+/*tem que ter um p antes dele para ele selecionar*/
+/*mudando para margin top ele faz ficar certinho*/
+p + p {
+  margin-top: 20px;
+}
